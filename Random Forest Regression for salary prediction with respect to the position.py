@@ -24,13 +24,13 @@ regressor.fit(X,Y)
 
 # Prediction of new result with the Random Forest Regression
 
-Y_Pred = regressor.predict(6.5)
+Y_Pred = regressor.predict(5.5)
 
 # Visualize the Random Forest Regression results in higher resolution and smoother curve
 X_Grid = np.arange(min(X), max(X), 0.01)
 X_Grid = X_Grid.reshape((len(X_Grid), 1))
 plt.scatter(X,Y, color = 'red')
-plt.plot(X_Grid, regressor.predict(X_Grid), color = 'blue')
+plt.plot(X_Grid, regressor.predict(X_Grid), color = 'yellow')
 plt.title('Random Forest Regression Results')
 plt.xlabel('Position level')
 plt.ylabel('Salary')
